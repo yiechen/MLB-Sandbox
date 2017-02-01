@@ -1,0 +1,39 @@
+---
+title: "Extract MLB Stats"
+author: "YieChen"
+date: "28 de outubro de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+Testing data-mining and data-analysis with R. Extraction of MLB baseball statistics from <http://www.baseball-reference.com> and later on computing advanced stats and metrics.
+
+
+```{r auto-run block}
+setwd("D:/Users/YCHEN/Desktop/RWorkspace/MLB Sandbox")
+library(XML)                            # 3.98-1.4
+library(plyr)                           # 1.8.4
+library(dplyr,verbose = FALSE)           # 0.5.0
+library(stringr)                        # 1.1.0
+library(tidyverse,verbose = TRUE)       # 1.0.0,uploads:ggplot2,dplyr,tidyr,readr,purrr,tibble
+library(ggthemes)                       # 3.2.0
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
